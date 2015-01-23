@@ -23,10 +23,21 @@
     }
 
 
-.carousel-inner > .item > img {
-    margin: 0 auto;
-}
+    .carousel-inner > .item > img {
+      margin: 0 auto;
+    }
 
+    .col-xs-8{
+      overflow: auto;
+    }
+
+    #searchUserId{
+      height: 20%;
+      width: 60%;
+      overflow: auto;
+    }
+
+    
 	</style>
 
 
@@ -36,7 +47,7 @@
 		<div class = "grey">
 			<div class="container"> 
 				<h1>meetup</h1>
-				<h6>lets into a new world...</h3>
+				<h6>lets into a new world...</h5>
 			</div>
 		</div>
 	</header>
@@ -70,7 +81,22 @@
 								  		</div>
 								  		<div id="collapse1" class="panel-collapse collapse in"> 
   											<div class="panel-body">
-   										 		<p>...</p>
+   										 		
+                          <div class="container">
+                            <form role="form" width="100">
+                              <div class="form-group">
+                                <label for="locId">Location:</label>
+                                <input type="text" class="form-control" id="locId" placeholder="Enter Place">
+                                <label for="disId">Distance Radius</label>
+                                <input type="text" class="form-control" id="disId" placeholder="Enter Radius of Distance">
+                              </div>
+                            </form>
+                              <ul>
+                                <li>Domlur</li>
+                                <li>Kodihali</li>
+                                <li>MurgeshPalya</li>
+                              </ul>
+                          </div>
   											</div>
   										</div>
 									</div>
@@ -85,7 +111,31 @@
 								  		</div>
 								  		<div id="collapse2" class="panel-collapse collapse in"> 
   											<div class="panel-body">
-   										 		<p>...</p>
+   										 		<div class="container">
+                            <form role="form" width="100">
+                              <div class="form-group">
+                                <label for="locId">Shairing Flats & Room with other flatmates</label>
+                                <br>
+                                 <input type="checkbox"> male <input type="checkbox"> female
+                                 <br>
+                                <label for="locId">occupancy</label>
+                                <br>
+                                 <input type="checkbox"> Single <input type="checkbox"> Double <input type="checkbox"> Tripple
+                                 <br> <br>
+                                <label for="locId">Rent a Flat</label>
+                                <br>
+                                <input type="checkbox"> 1RK <input type="checkbox"> 1BHK <input type="checkbox"> 2BHK <input type="checkbox"> 3BHK
+                                <input type="checkbox"> 4BHK <input type="checkbox"> PentaHouse
+
+
+                              </div>
+                            </form>
+                              <ul>
+                                <li>Domlur</li>
+                                <li>Kodihali</li>
+                                <li>MurgeshPalya</li>
+                              </ul>
+                          </div>
   											</div>
   										</div>
 									</div>
@@ -112,7 +162,7 @@
 
 
           <!-- Searched User Information who want to share or rent their flats  -->
-					<div class = "col-xs-8"> 
+					<div class = "col-xs-8" > 
 						<div class="row"> 
 							<h4> 
 								<div class="well"> 
@@ -121,20 +171,24 @@
 							</h4>
 						</div>
 
+            <!-- row group start -- >            
+            <div class="row" id="searchUserId"> 
             <!--thumbnails first row -->
-						<div class="row">
+						<div class="row">  
                 <!-- first thumbnail -->
   							<div class="col-sm-3 col-md-3">
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-                          <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal">Check
+                          <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
+                          <a href="#" class="btn btn-default btn-xs" role="button">chat
+                          </a>
         								</p>
      								</div>
     							</div>
@@ -169,28 +223,28 @@
                           <div class="item active">
                             <img src="images\flat01_inside01.jpg" alt="..." width="300" height="300">
                             <div class="carousel-caption">
-                                <h3>Caption Text</h3>
+                                <h5>Caption Text</h5>
                             </div>
                           </div>
                           <div class="item">
                             <img src="images\flat01_inside02.jpg" alt="..."width="300" height="300">>
                             <div class="carousel-caption">
-                                <h3>Caption Text</h3>
+                                <h5>Caption Text</h5>
                             </div>
                           </div>
                           <div class="item">
                             <img src="images\flat01_inside03.jpg" alt="..." width="300" height="300">>
                             <div class="carousel-caption">
-                                <h3>Caption Text</h3>
+                                <h5>Caption Text</h5>
                             </div>
                           </div>
                         </div>
                         </div>
                       </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close
                             </button>
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary btn-xs">
                                 Submit changes
                             </button>
                         </div>
@@ -203,12 +257,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -220,12 +274,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -237,12 +291,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -258,12 +312,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -275,12 +329,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -292,12 +346,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -309,12 +363,12 @@
     							<div class="thumbnail">
     								<img src="images\user1.jpg" alt="...">
      								<div class="caption">
-        								<h3>1km/Domlur</h3>
+        								<h5>1km/Domlur</h5>
        									<p>flat:1RK    LifeStyle:5.5 </p>
         								<p>
-        									<a href="#" class="btn btn-primary" role="button">Check
+        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
         									</a>
-        									<a href="#" class="btn btn-default" role="button">Drop
+        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
         									</a>
         								</p>
      								</div>
@@ -322,6 +376,14 @@
   							</div>
 
 						</div> <!-- 2nd row finish -->
+          </div> <!-- row Grp is end -->
+
+          <div class="row">
+            <p>
+              
+            </p>
+          </div>
+
 
 					</div> <!-- search user information end -->
 				</div> <!-- main row end -->
