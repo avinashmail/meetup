@@ -8,9 +8,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/meetup.css" rel="stylesheet">
 
     <style >
-    	.grey{
+    .grey{
     		background-color: #ccc;
 		}
 
@@ -31,380 +32,480 @@
       overflow: auto;
     }
 
-    #searchUserId{
-      height: 20%;
-      width: 60%;
-      overflow: auto;
+
+
+
+    .container, .thumbnail , {
+      margin: 0px;
+      width: 100%;
     }
 
-    
+    .col-md-2{
+      margin: 0px;
+      padding: 0px;
+    }
+  
 	</style>
 
 
   </head>
-  <body>
+  <body class="" style="background-color:red;">
 	
-		<div class = "grey">
+		<div class = "grey" height="25px">
 			<div class="container"> 
 				<h1>meetup</h1>
-				<h6>lets into a new world...</h5>
 			</div>
-		</div>
-	</header>
-	
+		</div>	
 
     <!-- Main Container for the whole body -->
 
-			<div class="container">
-				<div class ="row"> 
 
-          <!-- login User Column of Span 4 -->
-					<div class = "col-xs-4">
-							<div class = "row"> 
-								<div >
-                  <!-- login User profile pic -->
-									<img src="images\user1.jpg" class="img-responsive" />
-								</div>
+		<div class="container" style="background-color:green;">
+			<div class ="row"> 
+
+        <!-- login User Column of Span 4 -->
+				<div class = "col-xs-4">
+						<div class = "row"> 
+							<div >
+                <!-- login User profile pic -->
+								<img src="images\user1.jpg" class="img-responsive" />
 							</div>
-
-							<div class = "row"> 
-                <!-- Group of pannel which contain detail from user -->
-								<div class="panel-group" id="detailPnlGrp">
-                  <!-- Panel containg location related information -->
-									<div class="panel panel-default">
-								 		<div class="panel-heading">
-								  			<h4 class="panel-title"> 
-								  				<a data-toggle="collapse" data-parent = "#detailPnlGrp" href="#collapse1">
-								  					 your location
-								  				</a>
-								  			</h4>
-								  		</div>
-								  		<div id="collapse1" class="panel-collapse collapse in"> 
-  											<div class="panel-body">
-   										 		
-                          <div class="container">
-                            <form role="form" width="100">
-                              <div class="form-group">
-                                <label for="locId">Location:</label>
-                                <input type="text" class="form-control" id="locId" placeholder="Enter Place">
-                                <label for="disId">Distance Radius</label>
-                                <input type="text" class="form-control" id="disId" placeholder="Enter Radius of Distance">
-                              </div>
-                            </form>
-                              <ul>
-                                <li>Domlur</li>
-                                <li>Kodihali</li>
-                                <li>MurgeshPalya</li>
-                              </ul>
-                          </div>
-  											</div>
-  										</div>
-									</div>
-                  <!-- Panel containg Shairing or rent related information -->
-									<div class="panel panel-default">
-								 		<div class="panel-heading">
-								  			<h4 class="panel-title"> 
-								  				<a data-toggle="collapse" data-parent = "#detailPnlGrp" href="#collapse2">
-								  					 Shairing/Rent
-								  				</a>
-								  			</h4>
-								  		</div>
-								  		<div id="collapse2" class="panel-collapse collapse in"> 
-  											<div class="panel-body">
-   										 		<div class="container">
-                            <form role="form" width="100">
-                              <div class="form-group">
-                                <label for="locId">Shairing Flats & Room with other flatmates</label>
-                                <br>
-                                 <input type="checkbox"> Male <input type="checkbox"> Female
-                                 <br>
-                                <label for="locId">occupancy</label>
-                                <br>
-                                 <input type="checkbox"> Single <input type="checkbox"> Double <input type="checkbox"> Tripple
-                                 <br> <br>
-                                <label for="locId">Rent a Flat</label>
-                                <br>
-                                <input type="checkbox"> 1RK <input type="checkbox"> 1BHK <input type="checkbox"> 2BHK <input type="checkbox"> 3BHK
-                                <br> <input type="checkbox"> 4BHK <input type="checkbox"> PentaHouse
-
-                                <br> <br>
-                                <label >Budget</label>
-                                <div class="container">
-                                  <div class="col-xs-1">
-                                    <input type="text" class="form-control" placeholder="Min Budget in Thousand">
-                                  </div>
-
-                                  <div class="col-xs-1">                                  
-                                    <input type="text" class="form-control" placeholder="Max Budget in Thousand">
-                                  </div>
-                                 </div>
-
-                              </div>
-                            </form>
-                          </div>
-  											</div>
-  										</div>
-									</div>
-
-                  <!-- Panel containg Facility which user want  information -->
-									<div class="panel panel-default">
-								 		<div class="panel-heading">
-								  			<h4 class="panel-title"> 
-								  				<a data-toggle="collapse" data-parent = "#detailPnlGrp" href="#collapse3">
-								  					 Basic Amenities
-								  				</a>
-								  			</h4>
-								  		</div>
-								  		<div id="collapse3" class="panel-collapse collapse in"> 
-  											<div class="panel-body">
-   										 		<div class="container">
-                            <form role="form" width="100">
-                              <input type="checkbox"> Furnished <input type="checkbox"> Semi Furnished <input type="checkbox"> Unfurnished 
-                              <br>
-                            </form>
-                          </div>
-  											</div>
-  										</div>
-									</div>
-
-								</div>
-							</div>
-					</div> <!-- login user information end -->
-
-
-
-          <!-- Searched User Information who want to share or rent their flats  -->
-					<div class = "col-xs-8" > 
-						<div class="row"> 
-							<h4> 
-								<div class="well"> 
-									Users Who want to share or rent their flats :)
-								</div>
-							</h4>
 						</div>
 
-            <!-- row group start -- >            
-            <div class="row" id="searchUserId"> 
-            <!--thumbnails first row -->
-						<div class="row">  
-                <!-- first thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-                          <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-                          <a href="#" class="btn btn-default btn-xs" role="button">chat
-                          </a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
+						<div class = "row"> 
+              <!-- Group of pannel which contain detail from user -->
+							<div class="panel-group" id="detailPnlGrp">
+                <!-- Panel containg location related information -->
+								<div class="panel panel-default">
+							 		<div class="panel-heading">
+							  			<h4 class="panel-title"> 
+							  				<a data-toggle="collapse" data-parent = "#detailPnlGrp" href="#collapse1">
+							  					 Type a location
+							  				</a>
+							  			</h4>
+							  		</div>
+							  		<div id="collapse1" class="panel-collapse collapse in"> 
+											<div class="panel-body">
+                          <form role="form-inline">
+                            <div class="form-group">
+                              <label for="locId">Location:</label>
+                              <input type="text" class="form-control" id="locId" placeholder="Type a location">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="disId" placeholder="Radius of Distance">
+                            </div>
+                          </form>
+                            <ul>
+                              <li>Domlur</li>
+                              <li>Kodihali</li>
+                              <li>MurgeshPalya</li>
+                            </ul>
+											</div>
+										</div>
+								</div>
+                <!-- Panel containg Shairing or rent related information -->
+								<div class="panel panel-default">
+							 		<div class="panel-heading">
+							  			<h4 class="panel-title"> 
+							  				<a data-toggle="collapse" data-parent = "#detailPnlGrp" href="#collapse2">
+							  					 Sharing/Rent
+							  				</a>
+							  			</h4>
+							  		</div>
+							  		<div id="collapse2" class="panel-collapse collapse in"> 
+											<div class="panel-body">
+ 										 		<div class="container">
+                          <form role="form" width="100">
+                            <div class="form-group">
+                              <label for="locId">Shairing Flats & Room with other flatmates</label>
+                              <br>
+                               <input type="checkbox"> Male <input type="checkbox"> Female
+                               <br>
+                              <label for="locId">occupancy</label>
+                              <br>
+                               <input type="checkbox"> Single <input type="checkbox"> Double <input type="checkbox"> Tripple
+                               <br> <br>
+                              <label for="locId">Rent a Flat</label>
+                              <br>
+                              <input type="checkbox"> 1RK <input type="checkbox"> 1BHK <input type="checkbox"> 2BHK <input type="checkbox"> 3BHK
+                              <br> <input type="checkbox"> 4BHK <input type="checkbox"> PentaHouse
 
+                              <br> <br>
+                              <label >Budget</label>
+                              <div class="container">
+                                <div class="col-xs-1">
+                                  <input type="text" class="form-control" placeholder="Min Budget in Thousand">
+                                </div>
 
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                              &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                User Place
-                            </h4>
+                                <div class="col-xs-1">                                  
+                                  <input type="text" class="form-control" placeholder="Max Budget in Thousand">
+                                </div>
+                               </div>
+
+                            </div>
+                          </form>
                         </div>
-                        <div class="modal-body">
-                            Room Type
+											</div>
+										</div>
+								</div>
+
+                <!-- Panel containg Facility which user want  information -->
+								<div class="panel panel-default">
+							 		<div class="panel-heading">
+							  			<h4 class="panel-title"> 
+							  				<a data-toggle="collapse" data-parent = "#detailPnlGrp" href="#collapse3">
+							  					 Basic Amenities
+							  				</a>
+							  			</h4>
+							  		</div>
+							  		<div id="collapse3" class="panel-collapse collapse in"> 
+											<div class="panel-body">
+ 										 		<div class="container">
+                          <form role="form" width="100">
+                            <input type="checkbox"> Furnished <input type="checkbox"> Semi Furnished <input type="checkbox"> Unfurnished 
                             <br>
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                         </ol>
- 
-                          <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="images\flat01_inside01.jpg" alt="..." width="300" height="300">
-                            <div class="carousel-caption">
-                                <h5>Caption Text</h5>
-                            </div>
-                          </div>
-                          <div class="item">
-                            <img src="images\flat01_inside02.jpg" alt="..."width="300" height="300">>
-                            <div class="carousel-caption">
-                                <h5>Caption Text</h5>
-                            </div>
-                          </div>
-                          <div class="item">
-                            <img src="images\flat01_inside03.jpg" alt="..." width="300" height="300">>
-                            <div class="carousel-caption">
-                                <h5>Caption Text</h5>
-                            </div>
-                          </div>
+                          </form>
                         </div>
+											</div>
+										</div>
+								</div>
+
+							</div>
+						</div>
+				</div> <!-- login user information end -->
+
+
+
+        <!-- Searched User Information who want to share or rent their flats  -->
+				<div class = "col-xs-8 item-gallery" style="background-color:darkblue;"> 
+          <!-- thumbnails -- >            
+          <div class="row" id="searchUserId"> 
+             <!--thumbnails first row -->
+							<div class="col-sm-2 col-md-2">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+      								<p>1BHK / Murgesh...</p>
+      								<p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+      									</a>
+      									<a href="#" class="btn btn-default btn-xs" role="button">Chat
+      									</a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">x
+                        </a>
+      								</p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 2nd thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 3rd thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 4th thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+
+              <!-- 5th thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 6th thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 7th thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 8th thumbnail -->
+							<div class="col-sm-3 col-md-3">
+  							<div class="thumbnail">
+  								<img src="images\user1.jpg" alt="...">
+   								<div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+   								</div>
+  							</div>
+							</div>
+
+              <!-- 9th thumbnail -->
+              <div class="col-sm-3 col-md-3">
+                <div class="thumbnail">
+                  <img src="images\user1.jpg" alt="...">
+                  <div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+                      <p>
+                        <a href="#" class="btn btn-default btn-success btn-block btn-xs" role="button">Message
+                        </a>
+                      </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10th thumbnail -->
+              <div class="col-sm-3 col-md-3">
+                <div class="thumbnail">
+                  <img src="images\user1.jpg" alt="...">
+                  <div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+                      <p>
+                        <a href="#" class="btn btn-default btn-success btn-block btn-xs" role="button">Message
+                        </a>
+                      </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 311th thumbnail -->
+              <div class="col-sm-3 col-md-3">
+                <div class="thumbnail">
+                  <img src="images\user1.jpg" alt="...">
+                  <div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+                      <p>
+                        <a href="#" class="btn btn-default btn-success btn-block btn-xs" role="button">Message
+                        </a>
+                      </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 12th thumbnail -->
+              <div class="col-sm-3 col-md-3">
+                <div class="thumbnail">
+                  <img src="images\user1.jpg" alt="...">
+                  <div class="caption">
+                      <p>1BHK / Murgesh...</p>
+                      <p>
+                        <a href="#" class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#myModal">Check
+                        </a>
+                        <a href="#" class="btn btn-default btn-xs" role="button">Drop
+                        </a>
+                      </p>
+                      <p>
+                        <a href="#" class="btn btn-default btn-success btn-block btn-xs" role="button">Message
+                        </a>
+                      </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row" id="searchDetails">
+            <div class = "container">
+              <div class="col-xs-4">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+ 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/flat01_inside01.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h3>Caption Text</h3>
                         </div>
                       </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close
-                            </button>
-                            <button type="button" class="btn btn-primary btn-xs">
-                                Submit changes
-                            </button>
+                      <div class="item">
+                        <img src="images/flat01_inside02.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h3>Caption Text</h3>
                         </div>
-                      </div><!-- /.modal-content -->
-                </div><!-- /.modal -->
-              </div> <!-- modal fade -->
-
-                <!-- 2nd thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-                <!-- 3rd thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-                <!-- 4th thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-						</div>
-
-            <!-- 2nd row of thumbnails -->
-						<div class="row">
-                <!-- 5th thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-                <!-- 6th thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-                <!-- 7th thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-                <!-- 8th thumbnail -->
-  							<div class="col-sm-3 col-md-3">
-    							<div class="thumbnail">
-    								<img src="images\user1.jpg" alt="...">
-     								<div class="caption">
-        								<h5>1km/Domlur</h5>
-       									<p>flat:1RK    LifeStyle:5.5 </p>
-        								<p>
-        									<a href="#" class="btn btn-primary btn-xs" role="button">Check
-        									</a>
-        									<a href="#" class="btn btn-default btn-xs" role="button">Drop
-        									</a>
-        								</p>
-     								</div>
-    							</div>
-  							</div>
-
-						</div> <!-- 2nd row finish -->
-          </div> <!-- row Grp is end -->
-
-          <div class="row">
-            <p>
-              
-            </p>
+                      </div>
+                      <div class="item">
+                        <img src="images/flat01_inside03.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h3>Caption Text</h3>
+                        </div>
+                      </div>
+                    </div>
+ 
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div> <!-- Carousel -->
+              </div>
+              <div class="col-xs-4">
+                <p> this is a sample. this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.this is a sample.</p>
+              </div>
+            </div>
           </div>
 
+				</div> <!-- Searched User Information end here -->
 
-					</div> <!-- search user information end -->
-				</div> <!-- main row end -->
-			</div> <!-- main container end -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            User Place
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        Room Type
+                        <br>
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                     </ol>
+
+                      <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images\flat01_inside01.jpg" alt="..." width="300" height="300">
+                        <div class="carousel-caption">
+                            <h5>Caption Text</h5>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images\flat01_inside02.jpg" alt="..."width="300" height="300">>
+                        <div class="carousel-caption">
+                            <h5>Caption Text</h5>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images\flat01_inside03.jpg" alt="..." width="300" height="300">>
+                        <div class="carousel-caption">
+                            <h5>Caption Text</h5>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close
+                        </button>
+                        <button type="button" class="btn btn-primary btn-xs">
+                            Submit changes
+                        </button>
+                    </div>
+                  </div><!-- /.modal-content -->
+              </div><!-- /.modal -->
+        </div> <!-- modal fade -->
+
+			</div> <!-- main row end -->
+		</div> <!-- main container end -->
+
 
 		
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>	
 </html>
 </html>
