@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>meetup</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/meetup.css" rel="stylesheet">
+
+    <style>
+    	#bodyId{
+    		background-color: black;
+    		padding: 0px;
+    		margin: 0px;
+    	}
+
+    	#mainContainerId{
+    		position: fixed;;
+    		top: 50%;
+    	}
+
+    	#btnId1{
+    		left: 500px;
+    	}
+ 
+    </style>
+
+
+  </head>
+  <body class="" id="bodyId">
+
+  	<div class="container" id="mainContainerId">
+  		<div class="row">
+  			<div class="col-md-6">
+  				<button class="btn btn-primary btn-lg" onmouseover="mOver(this)" id="btnId1" > Looking for Space </button>
+  			</div>
+  			<div class="col-md-6">
+  				<button class="btn btn-primary btn-lg" onmouseover="mOver(this)" id="btnId2" > Want to give/share Space </button>
+  			</div>
+  		</div>
+  	</div>
+
+  	<script type="text/javascript">
+  		function mOver(obj){
+  			obj.style.visibility = "hidden";
+  		}
+
+  	</script>
+
+  	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>	
+</html>
+</html>

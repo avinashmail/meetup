@@ -27,14 +27,14 @@
 
     .container{
       width: 100%;
-      margin: 5px;
+      margin: 0px;
       padding: 0px;
     }
 
     .thumbnailWindow{
       overflow-y : auto;
       overflow-x : hidden;
-      height: 300px;
+      height: 120px;
     }
 
     #bodyId{
@@ -48,22 +48,50 @@
 
     #loginColUserId{
       background-color: yellow;
+      padding: 0px;
     }
 
     #searchContainerUserId{
       width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #808080;
     }
 
     #thumbnailColId{
       margin-left: 10px;
       margin-right : 10px;
+      margin-top: 5px;
       padding: 0px;
     }
 
     .thumbnail{
       padding: 0px;
       margin: 4px;
-      height: 140px;
+      height: 100px;
+      width: 140px;
+    }
+    #searchColUserId{
+      padding: 0px;
+    }
+
+    #detailOfPlaceId{
+      background-color: white;
+      height: 350px;
+    }
+
+    #dividerId{
+      background-color: black;
+      height: 10px;
+    }
+
+    #imageSlideColId{
+      background-color: #505050;
+    }
+
+    #btnToolbarId{
+      background-color: black;
+      padding: 0px;
     }
   
 	</style>
@@ -74,7 +102,7 @@
 	
     <!-- Heading Meetup  -->
 		<div class ="" id="headerId">
-			<div class="container"> 
+			<div class="container" style="padding-left:20px;"> 
 				<h1>meetup</h1>
 			</div>
 		</div>	
@@ -82,7 +110,7 @@
     <!-- Main Container for the whole body -->
 		<div class="container" style="background-color:green;">
         <!-- login User Column of Span 4 -->
-				<div class = "col-xs-4" id = "loginColUserId">
+				<div class = "col-xs-3" id = "loginColUserId">
 							<div>
                 <!-- login User profile pic -->
 								<img src="images\user1.jpg" class="img-responsive"/>
@@ -188,7 +216,7 @@
 				</div> <!-- login user information end -->
 
         <!-- Searched User Information who want to share or rent their flats  -->
-				<div class = "col-xs-8" style="background-color:blue;" id="searchColUserId" > 
+				<div class = "col-xs-9" style="background-color:blue;" id="searchColUserId" > 
 
           <!-- thumbnail contaner-->
           <div class ="container thumbnailWindow" id = "searchContainerUserId">
@@ -204,10 +232,6 @@
                                  <img src="images\\user1.jpg" alt="..." class="img-responsive"> \
                                  <div class="caption"> \
                                     <p>1BHK / Murgesh..</p> \
-                                    <p> \
-                                      <a href="#" class="btn btn-primary btn-xs" role="button">Chat </a> \
-                                      <a href="#" class="btn btn-warning btn-xs pull-right" role="button" >Drop </a> \
-                                    </p> \
                                   </div> \
                                 </div> \
                               </div>';
@@ -218,10 +242,11 @@
             </script>
           </div>
 
+          <div  id="dividerId"> </div>
+          <div class="container" id="placeDetailContainerId">
           <!-- detail of places image slideshow and information -->
-          <div class="container" style="background-color:orange;" id="imageSlideContainerId"> 
-                <div class="row">
-                    <div class="col-sm-6" style="background-color:pink;" id = "imageSlideColId">
+                  <div class="col-sm-6" style="padding:0px;" >
+                    <div id = "imageSlideColId">
                         <script>
                           var text = '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> \
                                         <ol class="carousel-indicators"> \
@@ -258,22 +283,29 @@
                           document.getElementById("imageSlideColId").innerHTML = text;
                         </script>
                     </div>
-                    <div class="col-sm-6" id="detailOfPlaceId">
-                        <h1>Detail of Space</h1>
-                        <p> 1 Rk </p> 
-                        <p> 1 Rk </p> 
-                        <p> 1 Rk </p> 
-                        <p> 1 Rk </p> 
-                        <p> 1 Rk </p> 
-                    </div>
-                </div>
-          </div>
 
+                    <div class="btn-toolbar" role="group" aria-lable="..." style="background-color:black;">
+                      <button class="btn btn-default btn-xs">shortlist</button>
+                      <button class="btn btn-success btn-xs">compare</button>
+                      <button class="btn btn-primary btn-xs">Chat</button>
+                      <button class="btn btn-warning btn-xs">Drop</button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-6" id="detailOfPlaceId">
+                        <h1>Detail of Space</h1>
+                        <p> Flat Type : <b> 1 Rk </b>  </p> 
+                        <p> Rent : <b> 8.5K </b> </p>
+                        <p> Deposit : <b> 1 Lac </b> </p> 
+                        <p> Address : <b> Diamond District, <br> Old Airport Road, Bangalore, <br> Karnatka </b>  </p> 
+                        <p> Condition : <b>  Furnished </b>  </p> 
+                        <p> Distance : <b>  1.5 KM </b> </p>
+                        <p> LandMark : <b> Diamond District </b> </p> 
+                  </div>
+          </div>
 				</div> <!-- Searched User col Information end here -->
 		</div> <!-- main container end -->
-
-
-		
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
